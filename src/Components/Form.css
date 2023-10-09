@@ -1,0 +1,106 @@
+:root {
+    --Red: hsl(0, 100%, 66%);
+    --White: hsl(0, 0%, 100%);
+    --Light-grayish-violet: hsl(270, 3%, 87%);
+    --Dark-grayish-violet: hsl(279, 6%, 55%);
+    --Very-dark-violet: hsl(278, 68%, 11%);
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+   
+}
+.leftside {
+    width: 50rem;
+    background: linear-gradient(
+    150deg,
+    black 15%,
+    rgb(132, 17, 255) ,
+    rgb(107, 55, 55) ,
+    rgb(25, 24, 82) ,
+    rgb(57, 19, 95) ,
+    rgb(57, 2, 63)
+  );
+    height: 100vh;
+      position: relative;
+  
+  
+  }
+
+  .rightside{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+}
+ form{
+   display: grid;
+   gap: 1rem;
+   height: 300px;
+   width: 450px;
+   grid-template-rows: repeat(4,1fr);
+}
+label{
+    color: var(--Very-dark-violet);
+    margin-bottom: .3rem;
+    text-transform: uppercase;
+}
+input{
+    display: grid;
+    padding: .5rem;
+    font-size: 18px;
+    border: 1px solid var(--Dark-grayish-violet);
+    border-radius: 6px;
+}
+
+.grid_1{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 span;
+}
+.grid_2{
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 span;
+}
+.grid_3{
+    display: flex;
+    flex-direction: column;
+}
+.grid_4{
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 span;
+}
+
+.card_information{
+    display: flex;
+    grid-column: 2 span;
+    gap: 1rem;
+}
+.details{
+
+}
+.two_inp{
+    display: flex;
+}
+.two_inp div{
+    flex-direction: column;
+}
+#card_date div input{
+    width: 70px;
+    margin-inline: .5rem;
+    margin-left: 0;
+}
+#card_cvc{
+    width: 100%;
+}
+form button{
+    grid-column: 2 span;
+    font-size: 18px;
+    height: 50px;
+    color: var(--White);
+    border-radius: 6px;
+    background: var(--Very-dark-violet);
+    cursor: pointer;
+}
